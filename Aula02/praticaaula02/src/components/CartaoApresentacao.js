@@ -16,11 +16,20 @@ const CartaoApresentacao = () => {
         <Text style={styles.nome}>John Doe</Text>
         <Text style={styles.descricao}>Desenvolvedor Mobile</Text>
         <View style={styles.botoesContainer}>
-            <TouchableOpacity style={[styles.botao,styles.botaoGithub]}
-            onPress={() => abrirLink('https://github.com')}
+        <TouchableOpacity
+             style={[styles.botao, styles.botaoGithub]}
+             onPress={() => abrirLink('https://github.com')}
             >
-                <Text style={styles.textoBotao}>Linkedin</Text>
+                <Text style={styles.textoBotao}>GitHub</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+             style={[styles.botao, styles.botaoLinkedin]}
+             onPress={() => abrirLink('https://linkedin.com')}
+            >
+                <Text style={styles.textoBotao}>LinkedIn</Text>
+            </TouchableOpacity>
+
         </View>
     </View>
   )
